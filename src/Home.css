@@ -1,0 +1,10 @@
+/* Import the variables */
+@import 'variables.css';
+
+/* Apply the variables to your styles */
+body {
+  background-color: var(--background-color); /* Use the background color */
+  color: var(--text-color); /* Use the text color */
+  text-align: center;
+  min-height: 600px;
+}

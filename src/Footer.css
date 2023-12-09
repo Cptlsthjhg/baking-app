@@ -1,0 +1,41 @@
+/* src/Header.css */
+/* main.css */
+
+/* Import the variables */
+@import 'variables.css';
+
+/* Apply the variables to your styles */
+body {
+  background-color: var(--accent-dark); /* Use the background color */
+  color: var(--text-color); /* Use the text color */
+}
+
+/* Other styles */
+
+.footer {
+    background-color: var(--accent-dark);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .nav {
+    margin-top: 20px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  

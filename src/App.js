@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'; // Import Routes
+import ChocolateChipCookies from './ChocolateChipCookies';
+import EverettC4 from './EverettC4';
+import AidenGBC from './AidenGBC';
+import Layout from './Layout';
+import Home from './Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes> {/* Use Routes instead of Switch */}
+          <Route path="/recipes/ChocolateChipCookies" element={<ChocolateChipCookies />} />
+          <Route path="/recipes/EverettC4" element={<EverettC4 />} />
+          <Route path="/recipes/AidenGBC" element={<AidenGBC />} />
+
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

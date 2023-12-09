@@ -1,0 +1,29 @@
+/* Layout.css */
+
+header {
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 10px 10px 10px 10px; /* Round the bottom corners */
+  }
+  /* Layout.css */
+
+  footer {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px; /* Round the bottom corners */
+  }
+
+  .layout-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+  }
+  
+  main {
+    flex-grow: 1; /* Allow the main content to grow and push the footer to the bottom */
+  }
+  
+
+  
